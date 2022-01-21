@@ -18,12 +18,22 @@ plt.show()
 plt.imshow(imgGray, cmap='gray')
 plt.show()
 
+
+binary = (R+G+B)/3
 for i in range(4526):
     for j in range(10000):
-        if imgGray[i,j]>10:
-            imgGray[i,j]=1
+        if binary[i,j]>10:
+            binary[i,j]=1
         else:
-            imgGray[i,j]=0
+            binary[i,j]=0
 
-plt.imshow(imgGray, cmap='gray')
+plt.imshow(binary, cmap='gray')
+plt.show()
+
+img_new = binary + imgGray
+plt.imshow(img_new, cmap='gray')
+plt.show()
+
+gray_20 = 20 + imgGray
+plt.imshow(gray_20, cmap='gray')
 plt.show()

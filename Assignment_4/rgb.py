@@ -1,11 +1,13 @@
 from matplotlib import pyplot as plt
 import matplotlib.image as mpimg
 
+#read image
 img = mpimg.imread('test.jpg')
 
+#read the red, green and blue colourspaces differently
 R, G, B = img[:,:,0], img[:,:,1], img[:,:,2]
-imgGray = (R+G+B)/3
 
+#display the images separately
 plt.imshow(R, cmap='Reds')
 plt.show()
 

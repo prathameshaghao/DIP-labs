@@ -10,6 +10,9 @@ R, G, B = img[:,:,0], img[:,:,1], img[:,:,2]
 
 x = 0.2989 * R + 0.5870 * G + 0.1140 * B
 
+plt.imshow(x, cmap='gray')
+plt.show()
+
 for i in range(410):
     for j in range(728):
         x[i,j] = round(x[i,j])

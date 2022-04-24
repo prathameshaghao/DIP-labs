@@ -1,5 +1,5 @@
 % This is a program for extracting objects from an image. Written for vehicle number plate segmentation and extraction
-% Authors : Jeny Rajan, Chandrashekar P S
+
 % U can use attached test image for testing
 % input - give the image file name as input. eg :- car3.jpg
 clc;
